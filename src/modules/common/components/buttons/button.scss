@@ -1,0 +1,19 @@
+@import "../../../../modules/common/styles/variables.scss";
+
+.btn {
+	text-transform: uppercase;
+
+	&-icon {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-primary {
+		background: transparent;
+		color: $primary-light-color;
+		width: 160px;
+		height: 30px;
+	}
+}
