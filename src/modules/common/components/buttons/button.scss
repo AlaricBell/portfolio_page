@@ -2,12 +2,38 @@
 
 .btn {
 	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 12px;
 
 	&-icon {
+		transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-end;
 		align-items: center;
+		padding-right: 10px;
+		width: 30px;
+		height: 29px;
+		background: rgb(0, 143, 140);
+		background: linear-gradient(
+			90deg,
+			rgba($primary-highlight-color, 0.6) 25%,
+			rgba($primary-highlight-color, 0.8) 75%,
+			rgba($primary-highlight-color, 1) 100%
+		);
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	&:hover &-icon {
+		transition: width 0.5s ease-in-out, background-color 0.3s 0.5s ease-in-out;
+		width: 160px;
+		background-color: $primary-highlight-color;
 	}
 
 	&-primary {
@@ -15,5 +41,12 @@
 		color: $primary-light-color;
 		width: 160px;
 		height: 30px;
+		padding-right: 30px;
+		background-color: transparent;
+		border: 1px solid $primary-highlight-color;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 }

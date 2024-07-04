@@ -5,7 +5,8 @@
 }
 
 html,
-body {
+body,
+main {
 	min-height: 100vh;
 	width: 100%;
 	margin: 0;
@@ -54,10 +55,4 @@ p {
 input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	display: none;
-}
-
-main {
-	padding: 16px;
-	max-width: 720px;
-	margin: 0 auto;
 }

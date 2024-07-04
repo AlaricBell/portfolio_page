@@ -1,13 +1,14 @@
 "use client";
 
-import classNames from "classnames";
+import "./panel.scss";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import PrimaryButton from "@/modules/common/components/buttons/primaryButton";
+import Content from "../content/content";
 
 const LandingPanel = () => {
 	return (
-		<section>
-			<PrimaryButton onClick={() => {}} text={"Hello World"} icon={faPlay} />
+		<section id='landing'>
+			<Content />
 		</section>
 	);
 };

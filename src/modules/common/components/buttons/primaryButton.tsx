@@ -26,7 +26,7 @@ const PrimaryButton = ({
 			{text}
 			<div className='btn-icon'>
 				<FontAwesomeIcon
-					style={{ width: "18px", height: "18px" }}
+					style={{ width: "10px", height: "10px" }}
 					icon={icon}
 				/>
 			</div>

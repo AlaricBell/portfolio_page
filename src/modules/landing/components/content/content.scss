@@ -1,0 +1,57 @@
+@import "../../../../modules/common/styles/variables.scss";
+
+#landing-content {
+	width: 90vw;
+	height: 80vh;
+	background-color: lighten($secondary-dark-color, 4%);
+	border-radius: 12px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	width: calc(90vw - 18px);
+	height: calc(80vh - 18px);
+	background: $secondary-dark-color; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		45deg,
+		lighten($secondary-dark-color, 14%),
+		lighten($secondary-dark-color, 8%),
+		$secondary-dark-color
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		45deg,
+		lighten($secondary-dark-color, 14%),
+		lighten($secondary-dark-color, 8%),
+		$secondary-dark-color
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	border-radius: 12px;
+	position: relative;
+
+	&-container {
+		position: absolute;
+		bottom: 64px;
+		left: 32px;
+		width: 50%;
+	}
+
+	&-name {
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		opacity: 0.8;
+	}
+
+	&-role {
+		font-size: 32px;
+	}
+
+	&-description {
+		font-size: 18px;
+		padding-bottom: 32px;
+		opacity: 0.8;
+	}
+}
