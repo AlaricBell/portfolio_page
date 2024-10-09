@@ -12,7 +12,7 @@ type ButtonProps = {
 	icon: IconProp;
 };
 
-const PrimaryButton = ({
+const NavigationButton = ({
 	onClick,
 	text,
 	icon,
@@ -21,10 +21,10 @@ const PrimaryButton = ({
 	return (
 		<button
 			onClick={onClick}
-			className={classNames("btn btn-primary", className)}
+			className={classNames("btn btn-navigation", className)}
 		>
 			{text}
-			<div className='btn-primary-icon'>
+			<div className='btn-navigation-icon'>
 				<FontAwesomeIcon
 					style={{ width: "10px", height: "10px" }}
 					icon={icon}
@@ -34,4 +34,4 @@ const PrimaryButton = ({
 	);
 };
 
-export default PrimaryButton;
+export default NavigationButton;

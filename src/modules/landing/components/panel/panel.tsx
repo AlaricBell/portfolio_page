@@ -6,7 +6,9 @@ import Content from "../content/content";
 const LandingPanel = () => {
 	return (
 		<section id='landing'>
-			<Content />
+			<div id='landing-content'>
+				<Content />
+			</div>
 		</section>
 	);
 };
