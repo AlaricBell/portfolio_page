@@ -17,7 +17,7 @@ const NavigationModal = () => {
 	const setModalOpen = useNavigationStore((state) => state.setIsOpen);
 	const setModalContent = useNavigationStore((state) => state.setContent);
 
-	return true ? (
+	return isOpen ? (
 		<section className='navigation-modal-overlay'>
 			<div className='navigation-modal'>
 				<div className='navigation-modal-operations'>
