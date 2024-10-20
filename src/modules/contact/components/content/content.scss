@@ -1,0 +1,34 @@
+@import "../../../../modules/common/styles/variables.scss";
+@import "../../../../modules/common/styles/extends.scss";
+
+.content {
+	@extend %panel-linear-gradient;
+	width: calc(90vw - 18px);
+	height: calc(80vh - 18px);
+	border-radius: 12px;
+	position: relative;
+
+	&-container {
+		position: absolute;
+		bottom: 64px;
+		left: 32px;
+		width: 50%;
+	}
+
+	&-name {
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		opacity: 0.8;
+	}
+
+	&-role {
+		font-size: 32px;
+	}
+
+	&-description {
+		font-size: 18px;
+		padding-bottom: 32px;
+		opacity: 0.8;
+	}
+}

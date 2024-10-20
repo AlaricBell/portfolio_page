@@ -5,27 +5,31 @@ import { faGithubAlt } from "@fortawesome/free-brands-svg-icons/faGithubAlt";
 export const navigationData: NavigationType[] = [
 	{
 		logoIcon: faGithub,
-		title: "Github",
+		title: "Home",
 		description:
 			"This is my github This is my github This is my github This is my github This is my github  This is my github",
-		benefits: ["it is cool", "it is still cool"],
+		details: ["it is cool", "it is still cool"],
+		link: "/",
 	},
 	{
 		logoIcon: faLinkedin,
-		title: "Github",
+		title: "About",
 		description: "This is my github",
-		benefits: ["it is cool", "it is still cool"],
+		details: ["it is cool", "it is still cool"],
+		link: "about",
 	},
 	{
 		logoIcon: faGithubAlt,
-		title: "Github",
+		title: "Contact",
 		description: "This is my github",
-		benefits: ["it is cool", "it is still cool"],
+		details: ["it is cool", "it is still cool"],
+		link: "contact",
 	},
 	{
 		logoIcon: faGithub,
 		title: "Github",
 		description: "This is my github",
-		benefits: ["it is cool", "it is still cool"],
+		details: ["it is cool", "it is still cool"],
+		link: "about",
 	},
 ];

@@ -4,5 +4,6 @@ export type NavigationType = {
 	logoIcon: IconProp;
 	title: string;
 	description: string;
-	benefits: string[];
+	details: string[];
+	link: string;
 };

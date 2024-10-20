@@ -6,6 +6,7 @@ import { NavigationType } from "./navigation.types";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import PrimaryButton from "../buttons/primaryButton";
 import NavigationButton from "../buttons/navigationButton";
+import { useNavigationStore } from "../../store/navigationStore";
 
 type NavigationModalItemProps = {
 	navigation: NavigationType;
@@ -16,6 +17,8 @@ const NavigationModalItem = ({
 	navigation,
 	number,
 }: NavigationModalItemProps) => {
+	const setIsModalOpen = useNavigationStore((state) => state.setIsOpen);
+
 	return (
 		<div className='navigation-modal-item'>
 			<span className='navigation-modal-item-number'>
@@ -33,7 +36,7 @@ const NavigationModalItem = ({
 				{navigation.description}
 			</p>
 			<ul className='navigation-modal-item-list'>
-				{navigation.benefits.map((benefit, index) => (
+				{navigation.details.map((benefit, index) => (
 					<li
 						className='navigation-modal-item-benefit'
 						key={`benefit-${index}`}
@@ -43,7 +46,12 @@ const NavigationModalItem = ({
 				))}
 			</ul>
 			<div className='navigation-modal-item-btn'>
-				<NavigationButton onClick={() => {}} text={"Close"} icon={faPlay} />
+				<NavigationButton
+					onClick={setIsModalOpen}
+					link={navigation.link}
+					text={"Close"}
+					icon={faPlay}
+				/>
 			</div>
 		</div>
 	);

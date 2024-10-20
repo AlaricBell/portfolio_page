@@ -5,32 +5,25 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import PrimaryButton from "@/modules/common/components/buttons/primaryButton";
 import { useNavigationStore } from "@/modules/common/store/navigationStore";
 import { navigationData } from "@/modules/common/data/navigation";
-import { useAnimationStore } from "@/modules/common/store/animationStore";
 
 const Content = () => {
 	const setModalOpen = useNavigationStore((state) => state.setIsOpen);
 	const setModalContent = useNavigationStore((state) => state.setContent);
-	const setIsAnimationVisible = useAnimationStore(
-		(state) => state.setIsVisible
-	);
-
-	const handleModal = (): void => {
-		setModalOpen();
-		setModalContent(navigationData);
-		setIsAnimationVisible();
-	};
 
 	return (
 		<div className='content'>
 			<div className='content-container'>
 				<h3 className='content-name'>David Molnar</h3>
-				<h1 className='content-role'>Full-Stack Software Developer</h1>
+				<h1 className='content-role'>CONTACT</h1>
 				<p className='content-description'>
 					With over 6 years of coding expreience, I always pay attention to
 					detail while focusing on clean, scalable and maintainable code.
 				</p>
 				<PrimaryButton
-					onClick={handleModal}
+					onClick={() => {
+						setModalOpen();
+						setModalContent(navigationData);
+					}}
 					text={"Learn more"}
 					icon={faPlay}
 				/>

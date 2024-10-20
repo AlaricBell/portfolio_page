@@ -1,9 +1,9 @@
 "use client";
 
-import Content from "@/modules/landing/components/content/content";
+import Content from "@/modules/contact/components/content/content";
 import "./panel.scss";
 
-const LandingPanel = () => {
+const AboutPanel = () => {
 	return (
 		<section id='landing'>
 			<div id='landing-content'>
@@ -13,4 +13,4 @@ const LandingPanel = () => {
 	);
 };
 
-export default LandingPanel;
+export default AboutPanel;

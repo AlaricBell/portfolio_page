@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/modules/common/styles/global.scss";
 import NavigationModal from "@/modules/common/components/navigation/navigationModal";
+import PageTransitionAnimation from "@/modules/common/components/animations/pageTransitionAnimation/Animation";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={poppins.className}>
 				<NavigationModal />
+				<PageTransitionAnimation />
 				{children}
 			</body>
 		</html>
