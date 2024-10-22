@@ -2,13 +2,29 @@
 	width: 90vw;
 	height: 80vh;
 	border-radius: 12px;
+	background: transparent;
+	overflow: hidden;
 	position: absolute;
 	z-index: 125;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: pink;
 }
 
 .animation {
+	width: 90vw;
+	height: 80vh;
+	border-radius: 12px;
+	position: absolute;
+	z-index: 125;
+	top: 0;
+	left: 0;
+
+	&-primary {
+		background: blue;
+	}
+
+	&-secondary {
+		background: red;
+	}
 }
